@@ -9,16 +9,15 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpFilter;
 
 /**
  * Servlet Filter implementation class EncodingFilter
  */
-@WebFilter("/EncodingFilter")
-public class EncodingFilter extends HttpFilter implements Filter {
+@WebFilter("/*")
+public class EncodingFilter implements Filter {
 
     /**
-     * @see HttpFilter#HttpFilter()
+     * Default constructor.
      */
     public EncodingFilter() {
 
